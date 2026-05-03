@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fepam Panificadora - Qualidade e Sabor de Verdade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+               <div class="logo">
+                <img src="img/logo.jpeg" alt="Fepam Panificadora Logo">
+                <h2>Fepam Panificadora</h2>
+            </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                    <li><a href="admin.html" class="admin-btn">Admin</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Fepam Panificadora</h1>
+            <p class="hero-subtitle">“Qualidade e sabor de verdade, todos os dias.”</p>
+            <a href="#produtos" class="cta-button">Ver Nossos Produtos</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1617096707519-02d8f403479e?w=800" alt="Pães frescos Fepam">
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre a Fepam Panificadora</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>A Fepam Panificadora é uma padaria tradicional de Viamão que se destaca pelo atendimento acolhedor, produtos frescos e preços acessíveis. Com produção diária, oferece pães, doces e salgados feitos com cuidado e qualidade, garantindo sabor e satisfação em cada visita.</p>
+                    <p>É o lugar ideal para quem busca aquele pão quentinho e um atendimento simples, rápido e de confiança.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <i class="fas fa-calendar"></i>
+                            <span>Fundada em 2017</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>Seg-Sáb: 7h às 20h</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-store"></i>
+                            <span>Produção diária</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Produtos -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            
+            <!-- Filtros -->
+            <div class="filtros">
+                <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" data-filtro="pães">Pães</button>
+                <button class="filtro-btn" data-filtro="doces">Doces</button>
+                <button class="filtro-btn" data-filtro="salgados">Salgados</button>
+            </div>
+
+            <!-- Grid de Produtos -->
+            <div class="produtos-grid" id="produtos-grid">
+                <!-- Produtos serão carregados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                   <div class="logo">
+                        <img src="img/logo.jpeg" alt="Fepam Panificadora Logo">
+                        <h3>Fepam Panificadora</h3>
+                    </div>
+                    <p>Qualidade e sabor de verdade, todos os dias.</p>
+                    <div class="horario">
+                        <i class="fas fa-clock"></i>
+                        <strong>Seg-Sáb: 7h às 20h</strong>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Endereço</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Estr. da Branquinha, 1320 - Martinica</p>
+                    <p><strong>Viamão - RS | CEP: 94455-001</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (51) 99728-5164</p>
+                    <p><i class="fas fa-envelope"></i> contato@fepampanificadora.com.br</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/fepampanificadoraoficial" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="tel:+5551997285164">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fepam Panificadora. Todos os direitos reservados. | Desenvolvido com ❤️ para Viamão-RS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
